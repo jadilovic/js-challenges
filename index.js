@@ -218,3 +218,16 @@ var plusOne = function (digits) {
 	}
 	return reversedIncrementedDigits.reverse();
 };
+
+const vowel = ['a', 'i', 'e', 'o', 'u'];
+
+const checkVowels = (text) => {
+	let count = 0;
+	for (const char of text) {
+		if (vowel.includes(char)) {
+			count++;
+		}
+	}
+	return count;
+};
+console.log(checkVowels('hello there boy'));

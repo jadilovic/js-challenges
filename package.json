@@ -1,15 +1,15 @@
 {
-  "name": "js-challenges",
-  "version": "1.0.0",
-  "description": "JS Challenges",
-  "main": "index.js",
-  "dependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "start": "nodemon index.js"
-  },
-  "author": "Jasmin Adilovic",
-  "license": "ISC"
+	"name": "js-challenges",
+	"version": "1.0.0",
+	"description": "JS Challenges",
+	"main": "index.js",
+	"dependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"start": "nodemon bild-it.js"
+	},
+	"author": "Jasmin Adilovic",
+	"license": "ISC"
 }

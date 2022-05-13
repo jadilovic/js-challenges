@@ -9,7 +9,11 @@ timeToEat("5:50") ➞ [1, 10]
 // 1 sat i 10 minuta do sljedeceg obroka, dorucak
 
 
-2. Julije Cezar je zastitio svoje povjerljive informacije enkripcijom.Enkripcija ili sifriranje je proces u kriptografiji kojim se vrsi izmjena podataka tako da se poruka, odnosno informacije, ucine necitljivim za osobe koje ne posjeduju određeno znanje (kljuc). Cezarova enkripcija pomice svako slovo za odredjeni broj slova. Ako vas pomak odvede preko kraja abecede, samo se vratite na pocetak abecede. U slučaju rotacije za 3, w, x, y i z bi se mapirali u z, a, b i c. Kreirajte funkciju koja uzima string s (tekst koji treba sifrirati) i cijeli broj n (faktor rotacije). Funkcija bi trebala vratiti sifrirani string.
+2. Julije Cezar je zastitio svoje povjerljive informacije enkripcijom.Enkripcija ili sifriranje je proces u kriptografiji kojim se vrsi izmjena podataka
+ tako da se poruka, odnosno informacije, ucine necitljivim za osobe koje ne posjeduju određeno znanje (kljuc). Cezarova enkripcija pomice svako slovo
+ za odredjeni broj slova. Ako vas pomak odvede preko kraja abecede, samo se vratite na pocetak abecede. U slučaju rotacije za 3, w, x, y i z bi se
+ mapirali u z, a, b i c. Kreirajte funkciju koja uzima string s (tekst koji treba sifrirati) i cijeli broj n (faktor rotacije). Funkcija bi trebala
+ vratiti sifrirani string.
 
 
 Primjeri: 
@@ -32,7 +36,8 @@ caesarCipher("A friend in need is a friend indeed", 20) ➞ "U zlcyhx ch hyyx cm
 Koristiti englesku abecedu. Engleska abeceda se sastoji od 26 slova: A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z.
 
 
-3. Kreirajte funkciju za rotaciju dvodimenzionalne matrice od N * N, popunjenom nasumicnim elementima. Rotacija se vrsi odredjen broj puta, s tim ako je broj pozitivan, rotacija je u smjeru kazaljke na satu, a ako nije, onda je rotacija u suprotnom smjeru.
+3. Kreirajte funkciju za rotaciju dvodimenzionalne matrice od N * N, popunjenom nasumicnim elementima. Rotacija se vrsi odredjen broj puta, 
+s tim ako je broj pozitivan, rotacija je u smjeru kazaljke na satu, a ako nije, onda je rotacija u suprotnom smjeru.
 
 
 Primjeri: 
@@ -61,7 +66,8 @@ Result:[
 
 
 
-4. Neko je pokusao cenzurirati moje stringove zamjenom svakog samoglasnika sa zvjezdicon (*) npr. l*k* th*s(like this). Srećom, uspio sam pronaći samoglasnike koji su uklonjeni. Uzimajuci u obzir cenzurirani string i string cenzuriranih samoglasnika, vratite originalni necenzurirani string.
+4. Neko je pokusao cenzurirati moje stringove zamjenom svakog samoglasnika sa zvjezdicon (*) npr. l*k* th*s(like this). Srećom, uspio sam pronaći 
+samoglasnike koji su uklonjeni. Uzimajuci u obzir cenzurirani string i string cenzuriranih samoglasnika, vratite originalni necenzurirani string.
 
 
 

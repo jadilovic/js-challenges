@@ -1,0 +1,106 @@
+﻿1. Napisati program koji razdvaja parne i neparne elemente u nizu. Program
+prvo generise niz od 10 elemenata popunjen nasumicnim brojevima od 1 do
+20. Zatim, program treba da prebaci sve parne brojeve na lijevu stranu,
+a sve neparne brojeve na desnu stranu tako da postoji jasna granica
+izmedju parnih i neparnih brojeva.
+Npr:
+Imamo niz: [1, 7, 4, 8, 3, 6, 12], kada se razdvoje parni i neparni brojevi niz izgleda ovako: [4, 8, 6, 12, 1, 7, 3]
+
+
+2. Za dati string, kreirajte funkciju koja kreira niz, dekonstruise i
+konstruise string slovo po slovo. Pogledajte primjer u nastavku za neke
+korisne smjernice: constructDeconstruct("Hello") ➞ [
+"H", "He", "Hel", "Hell", "Hello", "Hell", "Hel", "He", "H"
+]
+
+
+3. Napisati funkciju koja nalazi zadnji index na kojem se nalazi odredjeni
+broj. Funkcija treba da prima niz koji pretrazuje i element koji trazi.
+Funkcija vraca zadnji index na kojem se broj nalazi. Npr: imamo niz:
+[2, 4, 5, 6, 7, 2 ,4] i trazimo broj 2. Funkcija ce nam vratiti 5 jer je
+5 zadnji index na kojem se nalazi broj 2. Ukoliko broj koji trazimo ne
+postoji u nizu, funkcija vraca -1.
+
+
+4. Napisati program koji pronalazi elemente koji su zajednicki za 2 niza. Generisati 2 niza duzine 10 i popuniti nasumicnim brojevima od 10 do 100. Funkcija treba da prima ova dva niza, te da vrati novi niz popunjen brojevima koji su zajednicki za oba niza. Npr: Imamo nizove: [1, 2, 3, 4] i [0, 2, 4, 6], funkcija nam vraca ovaj niz: [ 2, 4 ].
+
+
+5. Napisati funkciju koja provjerava da li je password dovoljno jak. Da bi password bio jak mora zadovoljiti sljedeca pravila:
+- Password mora imati najmanje 8 a najvise 20 karaktera
+- Password mora imati barem jednom malo slovo, barem jedno veliko slovo i barem jedan broj
+- Password ne smije imati vise od 2 uzastopna karaktera koji se ponavlja. Npr: password ne smije sadrzavati aaa.
+
+
+
+
+
+
+
+
+
+
+
+
+6. Pravimo program koji racuna prosjecno vrijeme za koje trkace auto
+obidje krug na stazi. Prosjecno vrijeme racunamo na osnovu 10 krugova.
+Vrijeme je predstavljeno u formatu: mm:ss.ms
+Npr. 1:36.31 - 1 minuta, 36 sekundi i 31 milisekunda. Da bi izracunali
+prosjek moramo imati vremena 10 krugova. Prvo je potrebno generisati niz od 10 elemenata, popunjen vremenima u opsegu od 1 - 2 minute u
+odgovarajucem formatu. Primjeri validnih vremena: 1:31.447, 1:15.75,
+1:43.009 itd. Zatim program racuna prosjecno vrijeme na osnovu ovog niza i ispisuje u konzolu.
+
+
+7. Napisati funkciju koja sortira niz. NE koristiti .sort(). Generisati niz duzine 10, popunjen nasumicnim brojevima od 10 do 100, zatim sortirati niz od najmanjeg do najveceg elementa i ispisati u konzolu.
+
+
+-----------------------------------------------------------------------------------------
+
+
+1. Prvog dana škole, direktor srednje škole Locker odlučuje da izvede eksperiment. Škola ima tačno 1.000 učenika i 1.000 ormarića poredanih duž glavnog hodnika škole. Svi ormarici su na pocetku otvoreni.
+   1. Direktor traži od prvog učenika da prođe glavnim hodnikom škole i zatvori sve ormariće. 
+   2. Direktor zatim traži od drugog učenika da prođe glavnim hodnikom i otvori svaki drugi ormarić. 
+   3. Direktor zatim traži od trećeg učenika da prođe glavnim hodnikom i ili otvori svaki treći ormarić ako je zatvoren, ili ga zatvori ako je otvoren. 
+   4. Četvrti učenik će zatim ponoviti isti postupak za svaki četvrti ormarić. 
+I tako dalje, sve dok posljednji od 1.000 učenika ne ponovi ovaj proces za svaki 1.000-ti ormarić, dakle, u stvari, samo otvaranje 1.000-og ormarića ako je zatvoren, ili zatvaranje ako je već otvoren. Na kraju ovog eksperimenta direktor odlučuje da izbroji broj ormarića koji su zatvoreni. Koji je to broj?
+
+
+2. Kreirajte funkciju koja određuje da li je broj Oddish ili Evenish. Broj je Oddish ako je zbir svih njegovih cifara neparan, a broj je Oddish ako je zbir svih njegovih cifara paran. Ako je broj Oddish, vratite "Oddish". U suprotnom, vratite "Evenish". Na primjer, oddishOrEvenish(121) bi trebao vratiti "Evenish", budući da je 1 + 2 + 1 = 4. oddishOrEvenish(41) bi trebao vratiti "Oddish", budući da je 4 + 1 = 5.
+
+3. Napišite funkciju koja uzima tri dimenzije cigle: visinu (a), širinu (b) i dubinu (c) i vraća true ako ova cigla može stati u rupu sa širinom (w) i visinom (h). 
+Primjeri:
+doesBrickFit(1, 1, 1, 1, 1) ➞ true
+doesBrickFit(1, 2, 1, 1, 1) ➞ true
+doesBrickFit(1, 2, 2, 1, 1) ➞ false
+
+Možete okrenuti ciglu kako god zelite prema rupi. 
+Pretpostavljamo da cigla odgovara ako su njene veličine jednake veličini rupe (tj. veličina cigle bi trebala biti manja ili jednaka veličini rupe, ne striktno manja). 
+Ne možete staviti ciglu na koso.
+
+
+   4. Napišite funkciju koji prima broj kao argument i ubacuje crtice (-) između svaka dva parna broja. Na primjer, ako je proslijedjeni broj 225468 ispis bi trebao biti 2-254-6-8.
+
+   5. Napišite funkciju koja pronalazi najcesci element niza tj element kojeg ima najvise u nizu. 
+Primer niza: 
+const arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]; 
+Ispis: a (5 puta)
+
+   6. Imamo dva niza. Elementi u arr1 su priredili zabavu i počeli da se miješaju. Međutim, jedan od elemenata se izgubio! Vaš zadatak je vratiti element koji je izgubljen.
+Primjeri:
+
+missing([1, 2, 3, 4, 5, 6, 7, 8], [1, 3, 4, 5, 6, 7, 8]) ➞ 2
+missing([true, true, false, false, true], [false, true, false, true]) ➞ true
+
+Pretpostaviti da prvi niz uvijek sadrži 1 ili više elemenata. 
+Elementi se uvijek gube. 
+Niz također može imati duplikate.
+
+      7. Data su dva proizvoljna stringa, napišite funkciju koji pronalazi najduži zajednički substring. Tj ukoliko imamo string: “Talk is cheap, show me the code.” i “Me like to code, me happy.”, najveci substring u ovom slucaju je “code”.
+
+
+
+
+
+         8. Kreirajte funkciju koja prima dva stringa kao dva parametra i vraća boolean koji pokazuje da li je prvi string anagram drugog stringa ili nije.
+Primjeri:
+isAnagram(“silent”, “listen”) ➞ true
+isAnagram(“socks”, “pants”) ➞ false

@@ -1,0 +1,44 @@
+﻿1. Vrati najmanji broj koraka koji je potreban da se string u potpunosti pretvori u velika ili u potpunosti u mala slova, ovisno o tome koji od njih zahtijeva najmanji broj koraka. Korak se sastoji od promjene jednog karaktera iz malih u velika slova, ili obrnuto.
+Primjeri: 
+stepsToConvert("abC") ➞ 1
+// "abC" converted to "abc" in 1 step
+
+
+stepsToConvert("abCBA") ➞ 2
+// "abCBA" converted to "ABCBA" in 2 steps
+
+
+stepsToConvert("aba") ➞ 0
+
+
+stepsToConvert("abaCCC") ➞ 3
+
+   2. Napisati program koji generiše jednodimenzionalni niz od 50 jednocifrenih brojeva. Nakon što je niz generisan, ispisati broj ponavljanja svakog broja u nizu. 
+
+
+        Primjer niza: 1, 1, 2, 5, 2, 3, 1 …….. 3
+
+
+        Broj 1 se ponavlja: 3 puta
+        Broj 2 se ponavlja: 2 puta
+        Broj 3 se ponavlja: 2 puta
+        Broj 5 se ponavlja: 1 puta 
+
+   3. Napisati program koji ce simulirati unos n slučajnih vrijednosti u opsegu od 0 do 1000. Za n uzeti proizvoljan broj. Izračunati statističke podatke u kojem procentu se od n generisanih slučajnih vrijednosti pojavljuje prost broj.
+Npr. Ako je generisano 10 brojeva (n = 10): 5,7,4,13,17,20,25,23,30,45, u ovom uzorku od 10 brojeva postoji 5 prostih brojeva pa je procenat prostih brojeva u ovom slučaju 50%.
+Napomena: Po želji kreirati dodatne funkcije da se olakša rješavanje zadatka.
+   4. Napišite JavaScript rekurzivnu funkciju da dobijete prvih n Fibonačijevih brojeva. Napomena: Fibonačijev niz je niz brojeva: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, . . . Svaki naredni broj je zbir prethodna dva, i niz krece od 0.
+
+   5. Napisati program koji izračunava prosjek svih savršenih brojeva iz zadatog intervala. Uzeti proizvoljan interval. Za neki broj se kaže da je savršen ukoliko je jednak sumi svih svojih djelilaca (ne uključujući njega samog). Na primjer, 28 je savršen broj: njegovi djelioci su 1, 2, 4, 7 i 14, a 1 + 2 + 4 + 7 + 14 = 28. Jedini savršeni brojevi u opsegu od 1 do 100 su brojevi 6 i 28.
+
+   6. Napisati funkciju koja kao parametar prima rečenicu (od najviše 200 karaktera) i iz nje uklanja svaku riječ koja počinje velikim slovom. Pored toga, funkcija treba da prebroji ukupan broj riječi u rečenici prije izmjene. Koristiti sljedeću funkciju: ukloniRijeci(string);. Npr. ako je data rečenica: "Stari most u Mostaru spaja obale rijeke Neretve." funkcija je treba pretvoriti u: "most u spaja obale rijeke". Funkcija ispisuje broj riječi u polaznoj rečenici (prije odsijecanja ostalih riječi).
+Radi jednostavnosti rješenja, pretpostavite da je riječ bilo koji niz znakova razdvojen znakom razmak.
+      7. Kreirati program koji će pronaći i ispisati sve brojeve od X do Y (uključujući granične vrijednosti) koji su deljivi svim svojim ciframa. Na primjer, broj 36 je djeljiv sa brojevima 3 i 6. (36/6=6 i 36/3=12). Brojeve X i Y uzeti proizvoljno a moraju biti u opsegu od 10 do 6000.
+
+      8. Svaki paran broj se može prikazati kao suma dva prosta broja (tkz. Goldbachovo pravilo). Napisati program koji ce prikazati sve parne brojeve u intervalu od n1 do n2 kao sumu dva prosta broja. n1 i n2 uzeti proizvoljno s tim da n2 mora biti veci od n1.
+
+
+         9. Uzeti dva proizvoljna prirodna broja A i B (A>100000, B>50000). Napisati program koji će kreirati i ispisati broj C koji će se sastojati od cifara broja A u obrnutom redoslijedu ali bez cifara koje se pojavljuju u broju B. Obavezno koristiti bar jednu funkciju. Ispsati razliku brojeva A i C.
+
+
+         10. Napisati program koji će generisati niz od 20 elemenata popunjen trocifrenim brojevima. Zatim napraviti funkciju koja će u nizu pronaći sve brojeve kojima je prva cifra (početna cifra sa lijeve strane) parna i ukloniti ih iz niza. Uklanjanje elemenata niza obavezno uraditi tako da ne ostaju prazni elementi već da se ostatak niza pomjeri kako ne bi bilo praznih elemenata. NOTE: Ne koristiti splice().

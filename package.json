@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {},
 	"scripts": {
-		"start": "nodemon bild-it.js"
+		"start": "nodemon codility.js"
 	},
 	"author": "Jasmin Adilovic",
 	"license": "ISC"

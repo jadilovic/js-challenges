@@ -1,4 +1,5 @@
-﻿1. Napisati funkciju koja prima broj minuta, a zatim vraca koliko je to u sekundama. Funkcija prima cijele kao i decimalne brojeve. 
+﻿1. Napisati funkciju koja prima broj minuta, a zatim vraca koliko je to u sekundama. 
+Funkcija prima cijele kao i decimalne brojeve. 
 Primjer:
 Funkciji proslijedimo 1,5 za broj minuta i funkcija nam vraca 90 sekundi.
 
@@ -6,15 +7,19 @@ Funkciji proslijedimo 1,5 za broj minuta i funkcija nam vraca 90 sekundi.
 Primjer: 
 Ako se funkcija zove max, poziv bi izgledao ovako: max(2, 7, 4, 6, 9, 12, 5) a funkcija vraca 12.
 
-3. Napisati funkciju koja racuna koliko kilometara neko auto moze preci na osnovu nivoa goriva u rezervaru. Funkcija prima 2 parametra, nivo goriva u rezervaru u litrima, i potrosnju auta tj koliko litara auto trosi na 100 km. 
+3. Napisati funkciju koja racuna koliko kilometara neko auto moze preci na osnovu nivoa goriva u rezervaru. 
+Funkcija prima 2 parametra, nivo goriva u rezervaru u litrima, i potrosnju auta tj koliko litara auto trosi 
+na 100 km. 
 Primjer:
-Ako je nivo rezervara 20 litara a auto trosi 10 litara na 100 km to znaci da ce auto moci preci 200 km sa gorivom u rezervaru.
+Ako je nivo rezervara 20 litara a auto trosi 10 litara na 100 km to znaci da ce auto moci preci 200 km sa 
+gorivom u rezervaru.
 
 4. Napisati funkciju koja vraca apsolutnu vrijednost nekog broja. NE Koristiti Math.abs().
 Primjer:
 Ako funkciji proslijedimo - 20 vratit ce nam 20.
 
-5. Napisati rekurzivnu funkciju koja racuna faktorijel nekog broja. Primjer faktorijela broja 5 je: 5 * 4 * 3 * 2 * 1 = 120. Rekurzivna funkcija je funkcija koja poziva samu sebe.
+5. Napisati rekurzivnu funkciju koja racuna faktorijel nekog broja. Primjer faktorijela 
+broja 5 je: 5 * 4 * 3 * 2 * 1 = 120. Rekurzivna funkcija je funkcija koja poziva samu sebe.
 
 6. Napisati funkciju koja prima 2D niz, zatim ga konvertuje u 1D niz. Ovaj proces se zove: “flattening an array”, gdje se smanjuje broj dimenzija niza.
 Primjer: 
@@ -24,18 +29,25 @@ Primjer:
 7 8 9
 Funkcija nam vraca 1D niz: 1 2 3 4 5 6 7 8 9
 
-7. Napisati funkciju koja se simulira jednostavan kalkulator. Funkcija prima 3 argumenta, jedan broj, znak operacije i drugi broj. 
+7. Napisati funkciju koja se simulira jednostavan kalkulator. Funkcija prima 3 argumenta, jedan broj, 
+znak operacije i drugi broj. 
 Primjer: 
-Recimo da se funkcija zove calc, poziv funkcije bi izgledao ovako: calc(3, ‘+’, 4) a rezultat bi bio 7. Funkcija treba da radi za: +, -, * i /.
+Recimo da se funkcija zove calc, poziv funkcije bi izgledao ovako: calc(3, ‘+’, 4) a rezultat bi bio 7. 
+Funkcija treba da radi za: +, -, * i /.
 
-8. Napisati funkciju koja dijeli niz u manje dijelove. Funkcija treba da prima dva argumenta, niz i broj u koliko dijelova trebamo podijeliti taj niz. 
+8. Napisati funkciju koja dijeli niz u manje dijelove. Funkcija treba da prima dva argumenta, niz i broj u 
+koliko dijelova trebamo podijeliti taj niz. 
 Primjer: 
-Recimo da se funkcija zove divide, poziv funkcije bi bio divide([1, 2, 3, 4, 5, 6, 7], 3); funkcija ce vratiti 2D niz koji izgleda ovako: [ [1, 2, 3 ], [4, 5, 6], [7] ].
+Recimo da se funkcija zove divide, poziv funkcije bi bio divide([1, 2, 3, 4, 5, 6, 7], 3); funkcija ce 
+vratiti 2D niz koji izgleda ovako: [ [1, 2, 3 ], [4, 5, 6], [7] ].
 
-9. Napsati funkciju koja provjerava da li postoji neki element u nizu. Funkcija prima dva parametra, niz koji pretrazujemo i element koji trazimo. Funkcija radi za sve tipove podataka. 
-Primjer: recimo da se funkcija zove find, poziv bi izgledao ovako: find([2, 7, 5, 3, 8, 1], 5), funckija ce vratiti boolean true jer broj 5 se nalazi u nizu. NE koristiti includes() funkciju.
+9. Napsati funkciju koja provjerava da li postoji neki element u nizu. Funkcija prima dva parametra, niz koji
+ pretrazujemo i element koji trazimo. Funkcija radi za sve tipove podataka. 
+Primjer: recimo da se funkcija zove find, poziv bi izgledao ovako: find([2, 7, 5, 3, 8, 1], 5), 
+funckija ce vratiti boolean true jer broj 5 se nalazi u nizu. NE koristiti includes() funkciju.
 
-10. Napisati program koji ispisuje ispod prikazani pattern. Program treba da pita korisnika od koliko redova se trokut sastoji. 
+10. Napisati program koji ispisuje ispod prikazani pattern. Program treba da pita korisnika od koliko redova 
+se trokut sastoji. 
 
 
 1  2  3  4  5
@@ -45,7 +57,8 @@ Primjer: recimo da se funkcija zove find, poziv bi izgledao ovako: find([2, 7, 5
                 5
 
 
-   11. Napisati program koji ispisuje 9 x 9 tablicu množenja. Program treba da ispiše tablicu u formatu prikazanom ispod. 
+   11. Napisati program koji ispisuje 9 x 9 tablicu množenja. Program treba da ispiše tablicu u formatu 
+   prikazanom ispod. 
 
 
    1   2   3   4   5   6   7   8   9  
@@ -69,6 +82,7 @@ Floydov trokut sastavljen od 5 redova izgleda ovako:
 4        5        6
 7        8        9        10
 11        12        13        14        15
+
       13.  Napisati program koji za proizvoljni string ispisuje:
 
 
@@ -80,7 +94,9 @@ c. broj (procenat) ostalih karaktera
 Koristiti funkcije u rjesavanju ovog zadatka.
 
 
-      14. Napisati funkciju koja transponuje matricu. Dakle, prvo generisati matricu 3x3 i popuniti nasumicnim brojevima od 0 do 10 a zatim ju ispisati. Sljedeci korak je trasponovanje matrice. Transponovati matricu znaci zamijeniti joj redove i kolone. 
+      14. Napisati funkciju koja transponuje matricu. Dakle, prvo generisati matricu 3x3 i popuniti 
+      nasumicnim brojevima od 0 do 10 a zatim ju ispisati. Sljedeci korak je trasponovanje matrice. 
+      Transponovati matricu znaci zamijeniti joj redove i kolone. 
 Primjer:
 Ukoliko je matrica: 
 1 2 3
@@ -92,19 +108,36 @@ Transponovana matrica je:
 2 5 6
 3 6 9
 
-      15. Imamo robota koji hoda po 2D koordinatnoj mreži sa osama x i y. Počinje na (0, 0) tj x = 0 i y = 0 i okrenut je prema sjeveru. Nakon svakog kretanja, robot se rotira za 90 stepeni u smjeru kazaljke na satu. S obzirom na količinu koju je robot pomjerio svaki put, morate izračunati konačnu poziciju robota. Ilustracije radi, ako se robotu daju pokreti 20, 30, 10, 40 onda će se kretati: 20 koraka sjeverno, sada na (0, 20) 30 koraka istočno, sada na (30, 20) 10 koraka južno. sada u (30, 10) 40 koraka zapadno, sada na (-10, 10) ...i završit će na koordinatama (-10, 10).
+      15. Imamo robota koji hoda po 2D koordinatnoj mreži sa osama x i y. 
+      Počinje na (0, 0) tj x = 0 i y = 0 i okrenut je prema sjeveru. Nakon svakog kretanja, 
+      robot se rotira za 90 stepeni u smjeru kazaljke na satu. S obzirom na količinu koju je robot 
+      pomjerio svaki put, morate izračunati konačnu poziciju robota. Ilustracije radi, ako se robotu daju 
+      pokreti 20, 30, 10, 40 onda će se kretati: 20 koraka sjeverno, sada na (0, 20) 30 koraka istočno, 
+      sada na (30, 20) 10 koraka južno. sada u (30, 10) 40 koraka zapadno, sada na (-10, 10) 
+      ...i završit će na koordinatama (-10, 10).
 
-      16. Imamo masinu koja sitni novac. Obzirom da odredjenu kolicinu novca mozemo podijeliti na vise nacina, nas program za ovu masinu bi trebao da ispise sve moguce opcije. Koristiti novcanice konvertibilne marke s tim da se ne koristi manja novcanica od 5 KM. 
+      16. Imamo masinu koja sitni novac. Obzirom da odredjenu kolicinu novca mozemo podijeliti na vise 
+      nacina, nas program za ovu masinu bi trebao da ispise sve moguce opcije. Koristiti novcanice 
+      konvertibilne marke s tim da se ne koristi manja novcanica od 5 KM. 
 Primjer: 20 KM bi se moglo usitniti na sljedece nacine:
 2 x 10KM, 4 x 5KM, 1 x 10KM + 2 x 5KM.
-Napisati funkciju koja prima jedan parametar, kolicinu novca, zatim funkcija ispisuje sve moguce opcije za tu kolicinu novca.
+Napisati funkciju koja prima jedan parametar, kolicinu novca, zatim funkcija ispisuje sve moguce opcije za 
+tu kolicinu novca.
 
-      17. Napisati funkciju koja validira broj telefona. Funkcija treba da prima string tj broj telefona, a vraca true ili false zavisno od toga da li je broj telefona ispravan. Broj telefona da bi bio ispravan mora biti u jednom od 2 sljedeca formata: 06x/xxx-xxx ili 060/xx-xx-xxx.
+      17. Napisati funkciju koja validira broj telefona. Funkcija treba da prima string tj broj telefona, 
+      a vraca true ili false zavisno od toga da li je broj telefona ispravan. Broj telefona da bi bio 
+      ispravan mora biti u jednom od 2 sljedeca formata: 06x/xxx-xxx ili 060/xx-xx-xxx.
 
 
 
-      18. Napisati funkciju koja provjerava da li cijeli broj ima tacno 3 djelioca, i vraca true ukoliko broj ima tacno 3 djelioca a false u suprotnom. Npr broj 4 ima tacno 3 djelioca: 1, 2 i 4. Zatim ispisati prvih 20 brojeva koji imaju tacno 3 djelioca.
+      18. Napisati funkciju koja provjerava da li cijeli broj ima tacno 3 djelioca, i vraca true ukoliko broj 
+      ima tacno 3 djelioca a false u suprotnom. Npr broj 4 ima tacno 3 djelioca: 1, 2 i 4. Zatim ispisati 
+      prvih 20 brojeva koji imaju tacno 3 djelioca.
 
-      19. Napisati funkciju koja provjerava da li string sadrzi brojeve i slova naizmjenicno. Funkcija prima string a vraca true ili false zavisno toga da li su brojevi i slova naizmjenicni. Npr. za string: “a1b2c3d4” vraca true, a za string “a12b3c4d” vraca false jer imamo dva broja(1i2) jedan pored drugog.
+      19. Napisati funkciju koja provjerava da li string sadrzi brojeve i slova naizmjenicno. Funkcija prima 
+      string a vraca true ili false zavisno toga da li su brojevi i slova naizmjenicni. 
+      Npr. za string: “a1b2c3d4” vraca true, a za string “a12b3c4d” vraca false jer imamo dva broja(1i2) 
+      jedan pored drugog.
 
-      20. Napisati program koji pretvara neki string u Morsov kod(Morse code). Tablica koda se nalazi ispod:
+      20. Napisati program koji pretvara neki string u Morsov kod(Morse code). Tablica koda se nalazi 
+      ispod:

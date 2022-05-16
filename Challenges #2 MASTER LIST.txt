@@ -22,7 +22,10 @@ Funkcija vraca zadnji index na kojem se broj nalazi. Npr: imamo niz:
 postoji u nizu, funkcija vraca -1.
 
 
-4. Napisati program koji pronalazi elemente koji su zajednicki za 2 niza. Generisati 2 niza duzine 10 i popuniti nasumicnim brojevima od 10 do 100. Funkcija treba da prima ova dva niza, te da vrati novi niz popunjen brojevima koji su zajednicki za oba niza. Npr: Imamo nizove: [1, 2, 3, 4] i [0, 2, 4, 6], funkcija nam vraca ovaj niz: [ 2, 4 ].
+4. Napisati program koji pronalazi elemente koji su zajednicki za 2 niza. Generisati 2 niza duzine 10 i 
+popuniti nasumicnim brojevima od 10 do 100. Funkcija treba da prima ova dva niza, te da vrati novi niz 
+popunjen brojevima koji su zajednicki za oba niza. Npr: Imamo nizove: [1, 2, 3, 4] i [0, 2, 4, 6], 
+funkcija nam vraca ovaj niz: [ 2, 4 ].
 
 
 5. Napisati funkciju koja provjerava da li je password dovoljno jak. Da bi password bio jak mora zadovoljiti sljedeca pravila:

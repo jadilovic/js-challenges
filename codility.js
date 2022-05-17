@@ -638,3 +638,110 @@ const last = (arr, element) => {
 // popuniti nasumicnim brojevima od 10 do 100. Funkcija treba da prima ova dva niza, te da vrati novi niz
 // popunjen brojevima koji su zajednicki za oba niza. Npr: Imamo nizove: [1, 2, 3, 4] i [0, 2, 4, 6],
 // funkcija nam vraca ovaj niz: [ 2, 4 ].
+
+const sameElements = () => {
+	const arr1 = [];
+	const arr2 = [];
+	for (let i = 0; i < 10; i++) {
+		arr1.push(Math.ceil(Math.random() * 100));
+		arr2.push(Math.ceil(Math.random() * 100));
+	}
+	console.log('arr1 : ', arr1);
+	console.log('arr2 : ', arr2);
+	const sameElementsArr = [];
+	for (let i = 0; i < 10; i++) {
+		if (arr1.indexOf(arr2[i]) > -1) {
+			sameElementsArr.push(arr2[i]);
+		}
+	}
+	console.log('same : ');
+	console.log(sameElementsArr);
+};
+
+// sameElements();
+
+// A binary gap within a positive integer N is any maximal sequence of consecutive zeros that is surrounded by
+// ones at both ends in the binary representation of N.
+
+// For example, number 9 has binary representation 1001 and contains a binary gap of length 2. The number 529
+// has binary representation 1000010001 and contains two binary gaps: one of length 4 and one of length 3.
+// The number 20 has binary representation 10100 and contains one binary gap of length 1. The number 15 has
+// binary representation 1111 and has no binary gaps. The number 32 has binary representation 100000 and has
+// no binary gaps.
+
+// Write a function:
+
+// function solution(N);
+
+// that, given a positive integer N, returns the length of its longest binary gap. The function should
+//  return 0 if N doesn't contain a binary gap.
+
+// For example, given N = 1041 the function should return 5, because N has binary representation
+//  10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0,
+//  because N has binary representation '100000' and thus no binary gaps.
+
+// Write an efficient algorithm for the following assumptions:
+
+// N is an integer within the range [1..2,147,483,647].
+
+const binaryGap = (num) => {
+	console.log(num.toString(2));
+	console.log(num.toString(2).split('1'));
+	const binaryNumArr = num.toString(2).split('1');
+	let binaryGap = 0;
+	if (binaryNumArr[0] !== '') {
+		binaryNumArr.shift();
+	}
+	if (binaryNumArr[binaryNumArr.length - 1] !== '') {
+		binaryNumArr.pop();
+	}
+	console.log(binaryNumArr);
+	for (let i = 0; i < binaryNumArr.length; i++) {
+		if (binaryNumArr[i]) {
+			if (binaryNumArr[i].length > binaryGap) {
+				binaryGap = binaryNumArr[i].length;
+			}
+		}
+	}
+	console.log(binaryGap);
+	return binaryGap;
+};
+
+binaryGap(32);
+
+// You are hosting a tennis tournament. P players, who will take part in the first round of this tournament,
+// are already registered and you have reserved C tennis courts for the matches. Exactly two players play
+// in each game and only one game can be played on each court at any given time. You want to host the maximum
+//  possible number of games starting at the same time (in order to finish the first round quickly).
+
+// How many games can be hosted in parallel simultaneously?
+
+// Write a function:
+
+// function solution(P, C);
+
+// that, given the number of players P and the number of reserved courts C, returns the maximum number of
+// games that can be played in parallel.
+
+// Examples:
+
+// 1. Given P = 5 players and C = 3 available courts, the function should return 2. Two games can be played
+// simultaneously (for instance, the first and second players can play on the first court, and the third and
+// 	fourth players on the second court, and the third court will be empty because the fifth player does not
+// 	have a partner to play with).
+
+// 2. Given P = 10 players and C = 3 courts, the function should return 3. At most three games can be hosted in
+// parallel.
+
+// Assume that:
+
+// P and C are integers within the range [1..30,000].
+// In your solution, focus on correctness. The performance of your solution will not be the focus of the
+// assessment.
+
+const playTennis = (P, C) => {
+	const games = Math.floor(P / 2);
+	return games < C ? games : C;
+};
+
+// console.log(playTennis(10, 3));

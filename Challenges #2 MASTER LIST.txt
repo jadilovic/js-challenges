@@ -28,10 +28,12 @@ popunjen brojevima koji su zajednicki za oba niza. Npr: Imamo nizove: [1, 2, 3, 
 funkcija nam vraca ovaj niz: [ 2, 4 ].
 
 
-5. Napisati funkciju koja provjerava da li je password dovoljno jak. Da bi password bio jak mora zadovoljiti sljedeca pravila:
+5. Napisati funkciju koja provjerava da li je password dovoljno jak. Da bi password bio jak mora zadovoljiti
+ sljedeca pravila:
 - Password mora imati najmanje 8 a najvise 20 karaktera
 - Password mora imati barem jednom malo slovo, barem jedno veliko slovo i barem jedan broj
-- Password ne smije imati vise od 2 uzastopna karaktera koji se ponavlja. Npr: password ne smije sadrzavati aaa.
+- Password ne smije imati vise od 2 uzastopna karaktera koji se ponavlja. Npr: password ne smije
+ sadrzavati aaa.
 
 
 

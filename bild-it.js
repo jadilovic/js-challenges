@@ -342,4 +342,68 @@ const deepest = (arr) => {
 	return maxDeep;
 };
 
-console.log(deepest(arrWater));
+// console.log(deepest(arrWater));
+
+// ------------------------------------------------------
+// Codility TEST TEST TEST TEST TEST
+
+const T = ['test1a', 'test1b', 'test1c', 'test3', 'test4a', 'test4b', 'test5'];
+const R = [
+	'Wrong answer',
+	'Runtime error',
+	'OK',
+	'Time limit exceed',
+	'OK',
+	'OK',
+	'OK',
+];
+
+const test = (T, R) => {
+	const objAnswers = {};
+	const arr = [];
+	for (let i = 0; i < T.length; i++) {
+		let element = T[i];
+		if (T[i].length > 5) {
+			element = T[i].slice(0, -1);
+		}
+		arr.push(element + '-' + R[i]);
+	}
+	arr.sort();
+	for (let i = 0; i < arr.length; i++) {
+		const elementArr = arr[i].split('-');
+		if (objAnswers[elementArr[0]]) {
+			objAnswers[elementArr[0]]++;
+		} else {
+			objAnswers[elementArr[0]] = 1;
+		}
+	}
+	console.log(arr);
+	console.log(objAnswers);
+	let j = 0;
+	const numberOfTestGroups = Object.keys(objAnswers).length;
+	for (let i = 0; i < numberOfTestGroups; i++) {
+		const elementArr = arr[j].split('-');
+		let score = [];
+		for (let x = 0; x < objAnswers[elementArr[0]]; x++) {
+			const elementArr = arr[j].split('-');
+			if (elementArr[1] === 'OK') {
+				score.push(true);
+			} else {
+				score.push(false);
+			}
+			j++;
+		}
+		console.log(score);
+		objAnswers[elementArr[0]] = score.every((item) => item === true);
+	}
+	console.log(objAnswers);
+	let countPass = 0;
+	for (const key in objAnswers) {
+		if (objAnswers[key] === true) {
+			countPass++;
+		}
+	}
+	console.log(Math.floor((countPass / numberOfTestGroups) * 100));
+};
+
+test(T, R);
